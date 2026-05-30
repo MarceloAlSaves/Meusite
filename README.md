@@ -1,4 +1,4 @@
-<title>Meu Site - HTML, CSS e Git</title>
+Meu Site - HTML, CSS e Git
 
 <p>Olá!</p>
 <p>Este é um projeto desenvolvido por mim para praticar HTML, CSS e versionamento com Git e GitHub.</p>
