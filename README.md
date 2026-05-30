@@ -1,4 +1,4 @@
-<title>Meu Site - HTML, CSS e Git</title>
+<h1>Meu Site - HTML, CSS e Git</h1>
 
 <p>Olá!</p>
 <p>Este é um projeto desenvolvido por mim para praticar HTML, CSS e versionamento com Git e GitHub.</p>
@@ -29,4 +29,3 @@
 <p>Organização por seções</p>
 <h1>🎯 Objetivo</h1>
 <p>Meu objetivo é evoluir como desenvolvedor, aprendendo cada vez mais sobre front-end e boas práticas de programação.</p>
-<img src="imagens/readme550.png" alt="Imagem de mostrando"
