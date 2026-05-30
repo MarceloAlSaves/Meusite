@@ -29,3 +29,7 @@
 <p>Organização por seções</p>
 <h1>🎯 Objetivo</h1>
 <p>Meu objetivo é evoluir como desenvolvedor, aprendendo cada vez mais sobre front-end e boas práticas de programação.</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/22456672-b1e9-479d-a204-e00fe15e0b05" width="750">
+</p>
+
