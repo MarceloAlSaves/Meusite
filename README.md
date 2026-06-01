@@ -12,7 +12,7 @@
 <p>Publicação de projetos no GitHub</p>
 <h1>Tecnologias utilizadas</h1>
 <p>HTML5</p>
-<p>CSS</p>3
+<p>CSS</p>
 <p>Git</p>
 <p>GitHub</p>
 <p>Visual Studio Code</p>
