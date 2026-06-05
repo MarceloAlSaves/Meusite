@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2 - CSS aprofundando</title>
+    <link rel="stylesheet" href="style.css">
+    <h1>1- Cores com CSS</h1>
+    <p>Para representar cores em CSS, podemos usar diferentes métodos:</p>
+    <ul>
+        <li><strong>Nomes de cores:</strong> Podemos usar nomes de cores predefinidos, como "red", "blue", "green", etc.</li>
+        <li><strong>Valores hexadecimais:</strong> Representam as cores usando um código hexadecimal, como "#FF0000" para vermelho, "#00FF00" para verde, e "#0000FF" para azul.</li>
+        <li><strong>Valores RGB:</strong> Especificam as cores usando os valores de vermelho, verde e azul, como "rgb(255, 0, 0)" para vermelho, "rgb(0, 255, 0)" para verde, e "rgb(0, 0, 255)" para azul.</li>
+        <li><strong>Valores RGBA:</strong> Semelhante ao RGB, mas inclui um valor de opacidade (alfa), como "rgba(255, 0, 0, 0.5)" para vermelho semi-transparente.</li>
+    </ul>
+    <h2>2.1- Propriedades de cor em CSS</h2>
+    <p>Existem várias propriedades em CSS que permitem controlar as cores dos elementos:</p>
+    <ul>
+        <li><strong>color:</strong> Define a cor do texto.</li>
+        <li><strong>background-color:</strong> Define a cor de fundo de um elemento.</li>
+        <li><strong>border-color:</strong> Define a cor da borda de um elemento.</li>
+        <li><strong>outline-color:</strong> Define a cor do contorno de um elemento.</li>
+    </ul>
+    <h1>3- Paleta de cor</h1>
+    <p>Uma paleta de cores é uma seleção de cores que são usadas em um projeto de design. Ela ajuda a criar uma identidade visual consistente e a transmitir a mensagem desejada. Existem várias ferramentas online que permitem criar paletas de cores, como Adobe Color, Coolors e Paletton.<img src="imagens/paletadecor[.png" style="float: right;"; width="350px" height="250px;" alt="Paleta de cores"S>
+    </p>
+    <p>Com isso, podemos criar designs mais harmoniosos e profissionais.</p>
+    <h1>4- Centralização de texto</h1>
+    <p>Para centralizar o texto em CSS, podemos usar a propriedade "text-align" com o valor "center". junto com a propriedade "margin" para centralizar horizontalmente. Exemplo:</p>
+    <pre>
+        .centralizado {
+            text-align: center;
+            margin: 0 auto;
+        }
+    </pre>
+    <p>Isso fará com que o texto dentro do elemento com a classe "centralizado" seja centralizado horizontalmente na página.</p>
+    <h1>5- Anatomia da tipografia</h1>
+    <p>A tipografia é a arte e técnica de arranjar tipos para tornar a linguagem escrita legível, atraente e eficaz. A anatomia da tipografia inclui vários termos importantes:</p>
+    <ul>
+        <li><strong>Ascendente:</strong> A parte de uma letra que se estende acima da linha de base, como a parte superior de "b", "d", "h", etc.</li>
+        <li><strong>Descendente:</strong> A parte de uma letra que se estende abaixo da linha de base, como a parte inferior de "g", "j", "p", etc.</li>
+        <li><strong>Linha de base:</strong> A linha imaginária sobre a qual as letras se assentam.</li>
+        <li><strong>Altura da linha:</strong> A distância entre a linha de base e a parte superior de uma letra.</li>
+        <li><strong>Serifa:</strong> As pequenas linhas ou traços que se estendem das extremidades das letras em algumas fontes, como "Times New Roman".</li>
+        <li><strong>Sans-serif:</strong> Fontes sem serifa, como "Arial" e "Helvetica".</li>
+
+    </ul>
+    <p>Você pode usar o google fonts para selecionar e integrar fontes gratuitas em seu projeto. usando a &lt;@import (linkdosite) &gt;.</p>
+    <h2>5.1- Fontes externas</h2>
+    <p>Para usar fontes externas em CSS, podemos usar a regra @import para importar a fonte desejada. Por exemplo, para importar a fonte "Roboto" do Google Fonts, podemos usar o seguinte código:</p>
+<pre>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+</pre>
+<p>Depois de importar a fonte, podemos usá-la em nosso CSS definindo a propriedade "font-family". Por exemplo:</p>
+<h1>6- Tamanho e medidas</h1>
+<p>Em CSS, podemos usar diferentes unidades de medida para definir o tamanho dos elementos. As unidades mais comuns incluem:</p>
+<ul>
+    <li><strong>Pixels (px):</strong> Uma unidade fixa que representa um ponto na tela. Por exemplo, "font-size: 16px;" define o tamanho da fonte como 16 pixels.</li>
+    <li><strong>Em (em):</strong> Uma unidade relativa que é baseada no tamanho da fonte do elemento pai. Por exemplo, "font-size: 2em;" define o tamanho da fonte como o dobro do tamanho da fonte do elemento pai.</li>
+    <li><strong>Rem (rem):</strong> Semelhante ao em, mas é baseado no tamanho da fonte do elemento raiz (geralmente o elemento <html>). Por exemplo, "font-size: 1.5rem;" define o tamanho da fonte como 1.5 vezes o tamanho da fonte do elemento raiz.</li>
+    <li><strong >Porcentagem (%):</strong> Uma unidade relativa que é baseada no tamanho do elemento pai. Por exemplo, "font-size: 150%;" define o tamanho da fonte como 150% do tamanho da fonte do elemento pai.</li>
+</ul>
+<p>Usar unidades relativas como em, rem e porcentagem pode ajudar a criar designs mais responsivos e adaptáveis a diferentes tamanhos de tela.</p>
+<p>Com isso, para utilizar essas unidades de medida de forma eficaz, é importante entender como elas se comportam em relação ao elemento pai e ao elemento raiz. Exemplo:</p>
+<pre>
+    .elemento {
+        font-size: 1.5em; /* O tamanho da fonte será 1.5 vezes o tamanho da fonte do elemento pai */
+    }
+</pre>
+<p>Isso permitirá que o design seja mais flexível e se adapte melhor a diferentes dispositivos e tamanhos de tela.</p>
+
+    
+</head>
+<body>
+    
+</body>
+</html>
