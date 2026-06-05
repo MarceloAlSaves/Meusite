@@ -46,10 +46,14 @@
 
     </ul>
     <p>Você pode usar o google fonts para selecionar e integrar fontes gratuitas em seu projeto. usando a &lt;@import (linkdosite) &gt;.</p>
-    <h2>5.1- Fontes externas</h2>
+    <h2 style="text-align: center;" underline="true">5.1- Fontes externas</h2>
     <p>Para usar fontes externas em CSS, podemos usar a regra @import para importar a fonte desejada. Por exemplo, para importar a fonte "Roboto" do Google Fonts, podemos usar o seguinte código:</p>
 <pre>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    @fontface {
+        font-family: 'Roboto';
+        src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    }
 </pre>
 <p>Depois de importar a fonte, podemos usá-la em nosso CSS definindo a propriedade "font-family". Por exemplo:</p>
 <h1>6- Tamanho e medidas</h1>
@@ -68,8 +72,65 @@
     }
 </pre>
 <p>Isso permitirá que o design seja mais flexível e se adapte melhor a diferentes dispositivos e tamanhos de tela.</p>
-
-    
+<h1>7- Tipos de alinhamentos</h1>
+<p>Em CSS, existem diferentes tipos de alinhamento que podem ser usados para posicionar elementos na página. Alguns dos tipos de alinhamento mais comuns incluem:</p>
+<ul>
+    <li><strong>Alinhamento à esquerda:</strong> O elemento é alinhado à esquerda da página ou do contêiner. Exemplo: "text-align: left;"</li>
+    <li><strong>Alinhamento à direita:</strong> O elemento é alinhado à direita da página ou do contêiner. Exemplo: "text-align: right;"    </li>
+    <li><strong>Alinhamento centralizado:</strong> O elemento é centralizado horizontalmente na página ou no contêiner. Exemplo: "text-align: center;"</li>
+    <li><strong>Alinhamento justificado:</strong> O texto é alinhado tanto à esquerda quanto à direita, criando um efeito de bloco. Exemplo: "text-align: justify;"</li>
+</ul>
+<p>Além disso, para alinhar elementos verticalmente, podemos usar a propriedade "vertical-align" com valores como "top", "middle" e "bottom". Exemplo: "vertical-align: middle;"</p>
+<h1>8- Indentificação com Ids</h1>
+<p>Em CSS, podemos usar IDs para identificar elementos específicos na página. Um ID é um identificador único que pode ser atribuído a um elemento HTML usando o atributo "id". Por exemplo:</p>
+<pre>
+    <div id="meuElemento">Conteúdo do elemento</div>
+</pre>
+<p>Também tem outro tipo chamado Class que faz a identificação de elementos em conjunto.
+Exemplo:</p>
+<pre>
+    <div class="meuElemento">Conteúdo do elemento 1</div>
+    <div class="meuElemento">Conteúdo do elemento 2</div>
+</pre>
+</p>
+<p>Depois de atribuir um ID a um elemento, podemos usar esse ID para aplicar estilos específicos a ele em nosso CSS. Para selecionar um elemento por ID, usamos o símbolo "#" seguido do nome do ID. Por exemplo:</p>
+<pre>
+    #meuElemento {
+        color: red;
+        font-size: 20px;
+    }
+</pre>
+<p>Isso fará com que o texto dentro do elemento com o ID "meuElemento" seja vermelho e tenha um tamanho de fonte de 20 pixels. É importante lembrar que um ID deve ser único em uma página, ou seja, não deve ser atribuído a mais de um elemento.</p>
+<h1>9- Pseudo-classes</h1>
+<p>As pseudo-classes em CSS são usadas para definir um estado especial de um elemento. Elas permitem aplicar estilos a elementos com base em sua posição, estado ou interação do usuário. Algumas das pseudo-classes mais comuns incluem:</p>
+<ul>
+    <li><strong>:hover:</strong> Aplica estilos a um elemento quando o mouse passa sobre ele. Exemplo: "a:hover { color: red; }"</li>
+    <li><strong>:active:</strong> Aplica estilos a um elemento quando ele está sendo clicado. Exemplo: "a:active { color: blue; }"</li>
+    <li><strong>:focus:</strong> Aplica estilos a um elemento quando ele está em foco, como um campo de formulário. Exemplo: "input:focus { border-color: green; }"</li>
+    <li><strong>:nth-child(n):</strong> Aplica estilos a um elemento com base em sua posição dentro de um contêiner. Exemplo: "li:nth-child(2) { color: red; }"</li>
+</ul>
+<h2>9.1- Pseudo-elementos</h2>
+<p>Os pseudo-elementos em CSS são usados para estilizar partes específicas de um elemento, como o primeiro caractere de um parágrafo ou o conteúdo antes de um elemento. Algumas das pseudo-elementos mais comuns incluem:</p>
+<ul>
+    <li><strong>::first-letter:</strong> Estila a primeira letra de um elemento. Exemplo: "p::first-letter { color: red; }"</li>
+    <li><strong>::first-line:</strong> Estila a primeira linha de um elemento. Exemplo: "p::first-line { font-weight: bold; }"</li>
+</ul>
+<h1>10- Grouping tags</h1>
+<p>As tags de agrupamento em CSS são usadas para organizar e estilizar conjuntos de elementos. Algumas das tags de agrupamento mais comuns incluem:</p>
+<ul>
+    <li><strong>&lt;div&gt;</strong> - Um elemento de bloco genérico para agrupar outros elementos.</li>
+    <li><strong>&lt;span&gt;</strong> - Um elemento de linha genérico para agrupar conteúdo dentro de um elemento de bloco.</li>
+</ul>
+<h1>11- Box shadow</h1>
+<p>A propriedade "box-shadow" em CSS é usada para adicionar sombras a elementos. Ela permite criar efeitos de profundidade e destaque em um design. A sintaxe básica da propriedade "box-shadow" é a seguinte:</p>
+<pre>
+    box-shadow: offset-x offset-y blur-radius color;
+</pre>
+<p>Onde:</p>
+<ul>
+    <li><strong>offset-x:</strong> A distância horizontal da sombra em relação ao elemento. Pode ser um valor positivo (sombra para a direita) ou negativo (sombra para a esquerda).</li>
+    <li><strong>offset-y:</strong> A distância vertical da sombra em relação ao elemento. Pode ser um valor positivo (sombra para baixo) ou negativo (sombra para cima).</li>
+    <li><strong>blur-radius:</strong> O raio de desfoque da sombra. Quanto maior o valor, mais suave será a sombra.</li>
 </head>
 <body>
     
