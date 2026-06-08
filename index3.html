@@ -9,6 +9,56 @@
 
 </head>
 <body>
-    
+   <h1>1- Imagem de fundo</h1>
+    <p>Para colocar uma imagem de fundo, utilize a propriedade background-image no CSS. Você pode especificar a URL da imagem que deseja usar como plano de fundo. Por exemplo:</p>
+    <pre>
+        body {
+            background-image: url("caminho/para/sua/imagem.jpg");
+        }
+    </pre>
+    <p>Certifique-se de substituir "caminho/para/sua/imagem.jpg" pelo caminho real da imagem que você deseja usar. Você também pode ajustar outras propriedades de background, como background-size, background-repeat e background-position para controlar como a imagem é exibida no plano.</p>
+    <p>Com a prioridade de repeat, você pode controlar se a imagem será repetida horizontalmente, verticalmente ou não será repetida.</p>
+    <p>Exemplo:</p>
+    <pre>
+        body {
+            background-image: url("caminho/para/sua/imagem.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </pre>
+    <p>Isso fará com que a imagem de fundo seja exibida apenas uma vez e ocupe toda a área do plano de fundo, ajustando-se ao tamanho da tela.</p>
+    <h2>Posição das imagens</h2>
+    <p>Para controlar a posição das imagens em uma página web, você pode usar a propriedade CSS background-position. Essa propriedade permite especificar a posição da imagem de fundo em relação ao elemento em que ela está aplicada.</p>
+    <p>Exemplo:</p>
+    <pre>
+        body {
+            background-image: url("caminho/para/sua/imagem.jpg");
+            background-position: center;
+        }
+    </pre>
+    <p>Isso fará com que a imagem de fundo seja centralizada no elemento. Você também pode usar outras palavras-chave como top, bottom, left, right ou valores específicos em pixels ou porcentagem para posicionar a imagem de acordo com suas necessidades.</p>
+    <p>Outra coisa interessante é que voce pode deixar a imagem fixa no lugar, mesmo quando o usuário rola a página.</p>
+    <pre>
+        body {
+            background-image: url("caminho/para/sua/imagem.jpg");
+            background-attachment: fixed;
+        }  
+    </pre>
+    <h1>2- ShortHand</h1>
+    <p>O shorthand em CSS permite que você defina múltiplas propriedades de uma vez, tornando o código mais conciso e legível. Por exemplo, em vez de escrever:</p>
+    <pre>
+        body {
+            background-image: url("caminho/para/sua/imagem.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </pre>
+    <p>Você pode usar o shorthand:</p>
+    <pre>
+        body {
+            background: url("caminho/para/sua/imagem.jpg") no-repeat center;
+        }
+    </pre>
+
 </body>
 </html>

@@ -1,9 +1,14 @@
 body {
 font-family: Arial, Helvetica, sans-serif;
-background-color: rgb(189, 233, 255);
+background-image: url("imagens/Background3.png");
+background-attachment: fixed;
+
+
+
 }
 p {
  text-align: justify;
+ max-width: 1000px;
 }
 h1 {
 text-align: center;
