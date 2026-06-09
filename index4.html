@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Módulo 4: Iframe</title>
+</head>
+<body>
+    <h1>1- Introdução ao Iframe</h1>
+    <p>O elemento &lt;iframe&gt; é usado para incorporar outro documento HTML dentro do documento atual. Ele permite que você exiba conteúdo de outra página web, como um vídeo do YouTube, um mapa do Google ou até mesmo outro site completo, dentro da sua própria página.</p>
+    <h2>1.1- Navegação em Iframes</h2>
+    <p>Para navegar dentro de um iframe, você pode usar o atributo "src" para especificar a URL do conteúdo que deseja exibir. Por exemplo:</p>
+    <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;</code></pre>
+    <p>Isso criará um iframe que exibe o conteúdo do site "example.com" com uma largura de 600 pixels e uma altura de 400 pixels.</p>
+    <p>A tag name é usada para dar um nome ao iframe, permitindo que ele seja referenciado por outros elementos da página.</p>
+    <p>A tag srdoc é usada para especificar o documento que será exibido dentro do iframe.</p>
+    <h2>1.2- Segurança em Iframes</h2>
+    <p>Ao usar iframes, é importante considerar questões de segurança. O conteúdo exibido dentro de um iframe pode ser controlado por terceiros, o que pode representar riscos de segurança, como ataques de clickjacking ou injeção de conteúdo malicioso. Para mitigar esses riscos, é recomendável usar o atributo "sandbox" para restringir as ações que o conteúdo do iframe pode realizar. Por exemplo:</p>
+    <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400" sandbox&gt;&lt;/iframe&gt;</code></pre>
+    <p>O atributo "sandbox" pode ser configurado com diferentes valores para permitir ou restringir ações específicas, como permitir scripts, formulários ou pop-ups.</p>
+    
+</body>
+</html>

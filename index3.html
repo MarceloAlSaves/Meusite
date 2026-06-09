@@ -9,7 +9,10 @@
 
 </head>
 <body>
-   <h1>1- Imagem de fundo</h1>
+    <link rel="stylesheet" href="style.css">
+    <p class="botaodeavacar2" border-style="text-align: left;" border-color="black" border-width="10px" border-style="solid">
+        <a href="index2.html">Para o Modulo 2</a>
+    <h1>1- Imagem de fundo</h1>
     <p>Para colocar uma imagem de fundo, utilize a propriedade background-image no CSS. Você pode especificar a URL da imagem que deseja usar como plano de fundo. Por exemplo:</p>
     <pre>
         body {
@@ -59,6 +62,77 @@
             background: url("caminho/para/sua/imagem.jpg") no-repeat center;
         }
     </pre>
+    <h1>3- Tabelas</h1>
+    <p>As tabelas em HTML são usadas para organizar e apresentar dados de forma tabular. Elas são criadas usando a tag table e podem conter linhas tr, células de dados td e células de cabeçalho th. As tabelas podem ser estilizadas usando CSS para melhorar sua aparência e legibilidade. Por exemplo, você pode adicionar bordas, alterar a cor de fundo, ajustar o espaçamento entre as células e muito mais. As tabelas são úteis para exibir informações estruturadas, como horários, preços, estatísticas e outros tipos de dados que se beneficiam de uma apresentação organizada, tambem existe a legenda da tabela como uma fonte de informação adicional. usando captionExemplo:</p>
+    <pre>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>25</td>
+                <td>São Paulo</td>
+            </tr>
+            <tr>
+                <td>Bruno</td>
+                <td>30</td>
+                <td>Rio de Janeiro</td>
+            </tr>
+        </table>
+    </pre>
+    <p>resultado:</p>
+    <table class="tabela" id="tabela1">
+            <tr>
+                <th class="tabela">Nome</th>
+                <th class="tabela">Idade</th>
+                <th class="tabela">Cidade</th>
+            </tr>
+            <tr>
+                <td class="tabela">Ana</td>
+                <td class="tabela">25</td>
+                <td class="tabela">São Paulo</td>
+            </tr>
+            <tr>
+                <td class="tabela">Bruno</td>
+                <td class="tabela">30</td>
+                <td class="tabela">Rio de Janeiro</td>
+            </tr>
+        </table>
+    <p>Extra! Se voce deixar as tabelas iniciais em cima e so voce utilizar CSS para estilizá-las. com o comando vertical-align</p>
+    <h2 class="cap3">3.1- Css de tabelas</h2>
+    <p>Para fazer um efeito zebra nas tabelas, você pode usar a propriedade CSS vertical-align. junto com o tag nth-child</p>
+    <pre>
+        .tabela tr:nth-child(de quanto em quanto voce quer pular) {
+            background-color: #f2f2f2;
+        }
+    </pre>
+    <p>Isso fará com que as linhas pares da tabela tenham um fundo cinza claro, criando um efeito de zebra que melhora a legibilidade dos dados. Você pode ajustar a cor de fundo e a frequência do efeito de acordo com suas preferências.</p>
+    <h2 class="cap3">3.2 - Tabela fixa</h2>
+    <p>Para criar uma tabela fixa, onde o cabeçalho permanece visível enquanto o usuário rola o conteúdo, você pode usar a propriedade CSS position: sticky. Aqui está um exemplo de como fazer isso:</p>
+    <pre>
+        .tabela thead {
+            position: sticky;
+            top: 0;
+            background-color: #fff; /* Cor de fundo para o cabeçalho */
+            z-index: 1; /* Garante que o cabeçalho fique acima do conteúdo */
+        }
+    </pre>
+    <p>Isso fará com que o cabeçalho da tabela fique fixo no topo da página enquanto o usuário rola o conteúdo da tabela.</p>
+    <h2 class="cap3">3.3- Mesclagem de células</h2>
+    <p>Para mesclar células em uma tabela, você pode usar as propriedades CSS colspan e rowspan. A propriedade colspan especifica quantas colunas uma célula deve abranger, enquanto a propriedade rowspan especifica quantas linhas uma célula deve abranger.</p>
+    <h1>Tabela reponsiva</h1>
+    <p>Para tornar uma tabela responsiva, você pode usar a propriedade CSS overflow-x: auto em um contêiner que envolve a tabela. Isso permitirá que a tabela seja rolada horizontalmente em dispositivos com telas menores, garantindo que todo o conteúdo da tabela seja acessível sem quebrar o layout da página.</p>
+    <pre>
+        .tabela-container {
+            overflow-x: auto;
+        }
+    </pre>
+    <p>Em seguida, você pode envolver sua tabela em um elemento com a classe "tabela-container" para aplicar essa funcionalidade.</p>
+    <h1><a href="index4.html">Módulo 4: Iframe</a></h1>
+
 
 </body>
 </html>
