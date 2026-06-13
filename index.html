@@ -18,82 +18,79 @@
             <a href="indexgit.html" class="button"><img src="imagens/GiteGithub.png" alt="Seta para voltar"></a>
         </section>
     </main>
-    <h1>Meu site</h1>
-    <p style="text-align: center;">Bem-vindo ao meu site!</p>
-    <h2>Sobre mim:</h2>
-        <p>Olá! Meu nome é Marcelo, Tenho 14 anos e sou um jovem desenvolvedor que está aprendendo HTML e CSS. Atualmente moro em carapícuiba, São paulo.<img src="imagens/fotodeperfilredondo.png" alt="Foto de perfil" width="150" style="float: right; border: 100%;"></p>
-        <p><a href="https://github.com/MarceloAlSaves/Exercicies" target="_blank" >Clique aqui para acessar as minhas atividades ja realizadas no meu repositório do GitHub</a></p>
-
-    <h2>Objetivos:</h2>
-    <p>Meus objetivos desse site são criar um pequeno portfólio e compartilhar meu conhecimento sobre desenvolvimento web.</p>
-    <h1><img src="imagens/html5.png" alt="Ícone do HTML5" width="30" style="float: down;"> Introdução a <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS<img src="imagens/csspng" style="float: down;" width="30px" height="30px;"> </abbr> </h1>
-    <p><abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> são duas tecnologias fundamentais usadas para criar sites. O HTML (HyperText Markup Language) é responsável pela estrutura da página, ou seja, ele organiza os elementos como títulos, parágrafos, imagens e links. É como se fosse o esqueleto de um site, definindo o que aparece na tela.</p>
-    <img src="imagens/html5.png" style="float: right;" width="150px" height="150px;">
-    <p>Já o CSS (Cascading Style Sheets) é usado para estilizar a aparência do site. Ele permite que você controle as cores, fontes, espaçamento e layout dos elementos HTML. Com o CSS, você pode transformar um site simples em algo visualmente atraente e personalizado.</p>
-    <h1>2- Estrutura básica de um documento HTML</h1>
-    <p>Um documento HTML é composto por uma estrutura básica que inclui a declaração do tipo de documento, o elemento raiz &lt;html&gt;, o cabeçalho &lt;head&gt; e o corpo &lt;body&gt;, para fazer uma estrutura simples pelo VScode utiliza o "!"</p>
-    <pre>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
-        &lt;head&gt;
-            &lt;title&gt;Meu site&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            Conteúdo aqui
-        &lt;/body&gt;
-        &lt;/html&gt;
-</pre>
-    <h1>3- Elementos do HTML</h1>
-    <p>Normalmente, um elemento HTML é composto por uma <abbr title="Parecido com um comando">tag</abbr> de abertura, um conteúdo e uma tag de fechamento. Por exemplo, um parágrafo é criado com a tag &lt;p&gt; e finalizado com &lt;/p&gt;, envolvendo o texto que será mostrado na tela. Existem muitos tipos de elemento de HTML Dentre eles os principais são:</p>
-    <img src="imagens/image.png" style="float: right;" width="256px" height="56px;">
-    <ul>
-        <li><strong>&lt;h1&gt; a &lt;h6&gt;</strong> - Títulos de diferentes níveis</li> 
-        <li><strong>&lt;p&gt;</strong> - Parágrafos</li>
-        <li><strong>&lt;a&gt;</strong> - Links</li>
-        <li><strong>&lt;img&gt;</strong> - Imagens</li>
-        <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong> - Listas</li>
-    </ul>
-    <h1>4- Links e Imagens</h1>
-    <p>Os links são elementos HTML que permitem navegar entre páginas web. Eles são criados com a tag &lt;a&gt; e o atributo href especifica a URL para onde o link aponta.</p>
-    <p>Exemplo: <a href="https://www.google.com">Visitar o Google</a></p>
-    <p>As imagens são elementos HTML que permitem inserir imagens em uma página web. Elas são criadas com a tag &lt;img&gt; e o atributo src especifica o caminho para a imagem.</p>
-    <p>Exemplo:</p> 
-    <img src="imagens/repositório850.png" alt="Meu repositório">
-    <h1>4- Extras</h1>
-    <p>Para colocar comentários no HTML, utilize a sintaxe &lt;!-- Comentário --&gt;. So que aparece so pelo VScode, utiliza bastante em ambientes de desenvolvimento. Para avisar algum problema, por exemplo.</p>
-
-    <h1>5- Conclusão</h1>
-    <p>HTML e essencial para criar sites. O HTML fornece a estrutura, sem o HTML, não teríamos uma maneira de organizar o conteúdo da página.</p>
-
-    <h1>2.1- Introdução ao CSS</h1>
-    <p>O CSS (Cascading Style Sheets) é uma linguagem de estilo usada para descrever a apresentação de um documento HTML. Ele permite controlar a aparência dos elementos HTML, como cores, fontes, espaçamento e layout. O CSS é fundamental para criar sites visualmente atraentes e personalizados.</p>
-    <img src="imagens/csspng" style="float: right;" width="150px" height="150px;">
-    <h1>2.2- Seletores de cores</h1>
-    <pre>
-    &lt;p {
-        color: blue;
-    }&gt;
-    </pre>
-    <p>Existem várias formas de definir cores no CSS, incluindo nomes de cores, valores hexadecimais e valores RGB. Por exemplo, para definir a cor do texto como azul, você pode usar o nome da cor "blue", o valor hexadecimal "#0000FF" ou o valor RGB "rgb(0, 0, 255)".</p>
-    <h1>2.3- Background</h1>
-    <pre>
-    &lt;body {
-        background-color: lightgray;
-    }&gt;
-    </pre>
-    <p>Existem várias formas de definir o fundo de um elemento no CSS, incluindo cores sólidas, imagens e gradientes. Por exemplo, para definir a cor do fundo como cinza claro, você pode usar o nome da cor "lightgray", o valor hexadecimal "#D3D3D3" ou o valor RGB "rgb(211, 211, 211)".</p>
-    <h1>2.4- Fontes</h1>
-    <p>O CSS permite controlar as fontes usadas em um site, incluindo o tipo de fonte, o tamanho e o estilo. Por exemplo, para definir a fonte de um título como Arial, você pode usar a propriedade font-family com o valor "Arial, sans-serif".</p>
-    <pre>
-    &lt;h1 {
-        font-family: Arial, sans-serif;
-    }&gt;
-    </pre>
-    <h1><a href="indexgit.html">Clique aqui para saber sobre Git e GitHub</a></h1>
-    <footer>
-  <h1><a href="index2.html">Módulo 2: Introdução ao css</a></h1>
-   <p style="text-align: center;">© 2026 Marcelo Alves - Desenvolvido com HTML e CSS</p>
-</footer>
+    <main id="conteudo">
+        <h1>Meu site</h1>
+        <p style="text-align: center;">Bem-vindo ao meu site!</p>
+        <h2>Sobre mim:</h2>
+            <p>Olá! Meu nome é Marcelo, Tenho 14 anos e sou um jovem desenvolvedor que está aprendendo HTML e CSS. Atualmente moro em carapícuiba, São paulo.<img src="imagens/fotodeperfilredondo.png" alt="Foto de perfil" width="150" style="float: right; border: 100%;"></p>
+            <p><a href="https://github.com/MarceloAlSaves/Exercicies" target="_blank" >Clique aqui para acessar as minhas atividades ja realizadas no meu repositório do GitHub</a></p>
+        <h2>Objetivos:</h2>
+        <p>Meus objetivos desse site são criar um pequeno portfólio e compartilhar meu conhecimento sobre desenvolvimento web.</p>
+        <h1><img src="imagens/html5.png" alt="Ícone do HTML5" width="30" style="float: down;"> Introdução a <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS<img src="imagens/csspng" style="float: down;" width="30px" height="30px;"> </abbr> </h1>
+        <p><abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> são duas tecnologias fundamentais usadas para criar sites. O HTML (HyperText Markup Language) é responsável pela estrutura da página, ou seja, ele organiza os elementos como títulos, parágrafos, imagens e links. É como se fosse o esqueleto de um site, definindo o que aparece na tela.</p>
+        <img src="imagens/html5.png" style="float: right;" width="150px" height="150px;">
+        <p>Já o CSS (Cascading Style Sheets) é usado para estilizar a aparência do site. Ele permite que você controle as cores, fontes, espaçamento e layout dos elementos HTML. Com o CSS, você pode transformar um site simples em algo visualmente atraente e personalizado.</p>
+        <h1>2- Estrutura básica de um documento HTML</h1>
+        <p>Um documento HTML é composto por uma estrutura básica que inclui a declaração do tipo de documento, o elemento raiz &lt;html&gt;, o cabeçalho &lt;head&gt; e o corpo &lt;body&gt;, para fazer uma estrutura simples pelo VScode utiliza o "!"</p>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Meu site&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                Conteúdo aqui
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+        <h1>3- Elementos do HTML</h1>
+        <p>Normalmente, um elemento HTML é composto por uma <abbr title="Parecido com um comando">tag</abbr> de abertura, um conteúdo e uma tag de fechamento. Por exemplo, um parágrafo é criado com a tag &lt;p&gt; e finalizado com &lt;/p&gt;, envolvendo o texto que será mostrado na tela. Existem muitos tipos de elemento de HTML Dentre eles os principais são:</p>
+        <img src="imagens/image.png" style="float: right;" width="256px" height="56px;">
+        <ul>
+            <li><strong>&lt;h1&gt; a &lt;h6&gt;</strong> - Títulos de diferentes níveis</li>
+            <li><strong>&lt;p&gt;</strong> - Parágrafos</li>
+            <li><strong>&lt;a&gt;</strong> - Links</li>
+            <li><strong>&lt;img&gt;</strong> - Imagens</li>
+            <li><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong> - Listas</li>
+        </ul>
+        <h1>4- Links e Imagens</h1>
+        <p>Os links são elementos HTML que permitem navegar entre páginas web. Eles são criados com a tag &lt;a&gt; e o atributo href especifica a URL para onde o link aponta.</p>
+        <p>Exemplo: <a href="https://www.google.com">Visitar o Google</a></p>
+        <p>As imagens são elementos HTML que permitem inserir imagens em uma página web. Elas são criadas com a tag &lt;img&gt; e o atributo src especifica o caminho para a imagem.</p>
+        <p>Exemplo:</p>
+        <img src="imagens/repositório850.png" alt="Meu repositório">
+        <h1>4- Extras</h1>
+        <p>Para colocar comentários no HTML, utilize a sintaxe &lt;!-- Comentário --&gt;. So que aparece so pelo VScode, utiliza bastante em ambientes de desenvolvimento. Para avisar algum problema, por exemplo.</p>
+        <h1>5- Conclusão</h1>
+        <p>HTML e essencial para criar sites. O HTML fornece a estrutura, sem o HTML, não teríamos uma maneira de organizar o conteúdo da página.</p>
+        <h1>2.1- Introdução ao CSS</h1>
+        <p>O CSS (Cascading Style Sheets) é uma linguagem de estilo usada para descrever a apresentação de um documento HTML. Ele permite controlar a aparência dos elementos HTML, como cores, fontes, espaçamento e layout. O CSS é fundamental para criar sites visualmente atraentes e personalizados.</p>
+        <img src="imagens/csspng" style="float: right;" width="150px" height="150px;">
+        <h1>2.2- Seletores de cores</h1>
+        <pre>
+        &lt;p {
+            color: blue;
+        }&gt;
+        </pre>
+        <p>Existem várias formas de definir cores no CSS, incluindo nomes de cores, valores hexadecimais e valores RGB. Por exemplo, para definir a cor do texto como azul, você pode usar o nome da cor "blue", o valor hexadecimal "#0000FF" ou o valor RGB "rgb(0, 0, 255)".</p>
+        <h1>2.3- Background</h1>
+        <pre>
+        &lt;body {
+            background-color: lightgray;
+        }&gt;
+        </pre>
+        <p>Existem várias formas de definir o fundo de um elemento no CSS, incluindo cores sólidas, imagens e gradientes. Por exemplo, para definir a cor do fundo como cinza claro, você pode usar o nome da cor "lightgray", o valor hexadecimal "#D3D3D3" ou o valor RGB "rgb(211, 211, 211)".</p>
+        <h1>2.4- Fontes</h1>
+        <p>O CSS permite controlar as fontes usadas em um site, incluindo o tipo de fonte, o tamanho e o estilo. Por exemplo, para definir a fonte de um título como Arial, você pode usar a propriedade font-family com o valor "Arial, sans-serif".</p>
+        <pre>
+        &lt;h1 {
+            font-family: Arial, sans-serif;
+        }&gt;
+        </pre>
+    </main>
+    <footer id="direito">
+    <p style="text-align: center;">© 2026 Marcelo Alves - Desenvolvido com HTML e CSS</p>
+    </footer>
    
 </body>
 </html>

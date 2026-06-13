@@ -17,66 +17,71 @@
             <a href="index3.html" class="button"><img src="imagens/setaesquerda.png" alt="Seta para voltar"></a>
         </section>
     </main>
-    <h1>1- Introdução ao Iframe e formulários</h1>
-    <p>O elemento &lt;iframe&gt; é usado para incorporar outro documento HTML dentro do documento atual. Ele permite que você exiba conteúdo de outra página web, como um vídeo do YouTube, um mapa do Google ou até mesmo outro site completo, dentro da sua própria página, você pode usar qualquer incorporação de algum site que você desejar.</p>
-    <h2>1.1- Navegação em Iframes</h2>
-    <p>Para navegar dentro de um iframe, você pode usar o atributo "src" para especificar a URL do conteúdo que deseja exibir. Por exemplo:</p>
-    <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;</code></pre>
-    <p>Isso criará um iframe que exibe o conteúdo do site "example.com" com uma largura de 600 pixels e uma altura de 400 pixels.</p>
-    <p>A tag name é usada para dar um nome ao iframe, permitindo que ele seja referenciado por outros elementos da página.</p>
-    <p>A tag srdoc é usada para especificar o documento que será exibido dentro do iframe.</p>
-    <h2>1.2- Segurança em Iframes</h2>
-    <p>Ao usar iframes, é importante considerar questões de segurança. O conteúdo exibido dentro de um iframe pode ser controlado por terceiros, o que pode representar riscos de segurança, como ataques de clickjacking ou injeção de conteúdo malicioso. Para mitigar esses riscos, é recomendável usar o atributo "sandbox" para restringir as ações que o conteúdo do iframe pode realizar. Por exemplo:</p>
-    <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400" sandbox&gt;&lt;/iframe&gt;</code></pre>
-    <p>O atributo "sandbox" pode ser configurado com diferentes valores para permitir ou restringir ações específicas, como permitir scripts, formulários ou pop-ups.</p>
-    <h1>2- Botões Criativos</h1>
-    <p>Para criar um botão interativo que vai para outra página, você pode usar a tag &lt;a&gt; com o atributo "href" para especificar a URL da página de destino. Por exemplo:
-    <pre><code>&lt;a href="https://www.example.com"&gt;Clique aqui para visitar Example.com&lt;/a&gt;</code>Imagem aqui</pre>
-    </p>
-    <p>Depois disso você pode adicionar mais detalhes com o botão. Usando o CSS</p>
-    <h1>3- Formulários</h1>
-    <p>Os formulários são usados para coletar informações dos usuários. Eles podem incluir campos de texto, caixas de seleção, botões de rádio e outros elementos de entrada. Para criar um formulário, você pode usar a tag &lt;form&gt; e incluir os elementos de entrada dentro dela. Você também pode colocar atribuitos ao formulário como Required(que precisa colocar algo) Por exemplo o metodo get:</p>
-    <pre>
-        &lt;form&gt;
-            &lt;autocomplete&lt;=off&gt;
-            &lt;label for="nome">Nome:</label>
-            &lt;input type="text" id="nome" name="nome"&gt;&lt;br&gt;&lt;br&gt;
-            &lt;label for="email">Email:</label>
-            &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
-            &lt;input type="submit" value="Enviar">
-        &lt;form&gt;
-    </pre>
-    <p>O método "get" é usado para enviar os dados do formulário como parte da URL, enquanto o método "post" envia os dados no corpo da requisição, proporcionando maior segurança para informações sensíveis. So que aparece os dados no Dev Tools.</p>
-    <p>Alterando o type, você pode criar diferentes tipos de botões para enviar o formulário. Como name, password, email, etc.</p>
-    <p>Input Especial de numero, você pode usar o comando Step, Fazendo que o usuário só possa inserir valores numéricos dentro de um intervalo específico. 1,5 ,2 ,2,5 etc.</p>
-    <h1>4- Media queries</h1>
-    <p>As media queries são usadas para aplicar estilos CSS diferentes com base nas características do dispositivo ou da tela. Elas permitem que você crie designs responsivos que se adaptam a diferentes tamanhos de tela, como desktops, tablets e smartphones.</p>
-    <p>Exemplo de media query para telas com largura máxima de 600 pixels:</p>
-    <pre><code>@media (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
-</code></pre>
-    <p>Isso fará com que o plano de fundo do corpo da página fique azul claro em dispositivos com largura de tela de 600 pixels ou menos. Você pode usar diferentes condições nas media queries, como min-width, max-width, orientation e outras para criar estilos específicos para diferentes dispositivos e orientações de tela.</p>
-    <h2>4.5- media features</h2>
-    <p>As media features são características específicas que podem ser usadas em media queries para aplicar estilos CSS com base em diferentes condições. Algumas das media features mais comuns incluem:</p>
-    <ul>
-        <li><strong>width</strong>: A largura da viewport do dispositivo.</li>
-        <li><strong>height</strong>: A altura da viewport do dispositivo.</li>
-        <li><strong>orientation</strong>: A orientação do dispositivo (portrait ou landscape).</
-        <li><strong>resolution</strong>: A resolução da tela do dispositivo.</li>
-        <li><strong>aspect-ratio</strong>: A proporção entre a largura e a altura da viewport.</li>
-    </ul>
-    <p>Essas media features permitem que você crie designs responsivos e adaptáveis, garantindo que seu site seja exibido corretamente em uma variedade de dispositivos e tamanhos de tela.</p>
-    <h1>5- Mobile First</h1>
-    <p>O conceito de "Mobile First" é uma abordagem de design e desenvolvimento web que prioriza a criação de experiências otimizadas para dispositivos móveis antes de se preocupar com versões para desktop. Isso significa que os designers e desenvolvedores começam a projetar e construir o site pensando primeiro na experiência do usuário em smartphones e tablets, garantindo que o conteúdo seja acessível, legível e fácil de navegar em telas menores.</p> 
-    <h2>5.5- Device Breakpoints</h2>
-    <p>Os device breakpoints são pontos de interrupção específicos usados em media queries para definir estilos CSS diferentes com base no tamanho da tela do dispositivo. Eles ajudam a criar designs responsivos que se adaptam a diferentes dispositivos, como smartphones, tablets e desktops. Alguns breakpoints comuns incluem:</p>
-    <ul>
-        <li><strong>320px</strong>: Dispositivos móveis pequenos (smartphones)</li>
-        <li><strong>768px</strong>: Dispositivos móveis grandes e tablets</li>
-        <li><strong>1024px</strong>: Desktops e laptops</li>
-    </ul>
+    <main id="conteudo">
+        <h1>1- Introdução ao Iframe e formulários</h1>
+        <p>O elemento &lt;iframe&gt; é usado para incorporar outro documento HTML dentro do documento atual. Ele permite que você exiba conteúdo de outra página web, como um vídeo do YouTube, um mapa do Google ou até mesmo outro site completo, dentro da sua própria página, você pode usar qualquer incorporação de algum site que você desejar.</p>
+        <h2>1.1- Navegação em Iframes</h2>
+        <p>Para navegar dentro de um iframe, você pode usar o atributo "src" para especificar a URL do conteúdo que deseja exibir. Por exemplo:</p>
+        <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;</code></pre>
+        <p>Isso criará um iframe que exibe o conteúdo do site "example.com" com uma largura de 600 pixels e uma altura de 400 pixels.</p>
+        <p>A tag name é usada para dar um nome ao iframe, permitindo que ele seja referenciado por outros elementos da página.</p>
+        <p>A tag srdoc é usada para especificar o documento que será exibido dentro do iframe.</p>
+        <h2>1.2- Segurança em Iframes</h2>
+        <p>Ao usar iframes, é importante considerar questões de segurança. O conteúdo exibido dentro de um iframe pode ser controlado por terceiros, o que pode representar riscos de segurança, como ataques de clickjacking ou injeção de conteúdo malicioso. Para mitigar esses riscos, é recomendável usar o atributo "sandbox" para restringir as ações que o conteúdo do iframe pode realizar. Por exemplo:</p>
+        <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400" sandbox&gt;&lt;/iframe&gt;</code></pre>
+        <p>O atributo "sandbox" pode ser configurado com diferentes valores para permitir ou restringir ações específicas, como permitir scripts, formulários ou pop-ups.</p>
+        <h1>2- Botões Criativos</h1>
+        <p>Para criar um botão interativo que vai para outra página, você pode usar a tag &lt;a&gt; com o atributo "href" para especificar a URL da página de destino. Por exemplo:
+        <pre><code>&lt;a href="https://www.example.com"&gt;Clique aqui para visitar Example.com&lt;/a&gt;</code>Imagem aqui</pre>
+        </p>
+        <p>Depois disso você pode adicionar mais detalhes com o botão. Usando o CSS</p>
+        <h1>3- Formulários</h1>
+        <p>Os formulários são usados para coletar informações dos usuários. Eles podem incluir campos de texto, caixas de seleção, botões de rádio e outros elementos de entrada. Para criar um formulário, você pode usar a tag &lt;form&gt; e incluir os elementos de entrada dentro dela. Você também pode colocar atribuitos ao formulário como Required(que precisa colocar algo) Por exemplo o metodo get:</p>
+        <pre>
+            &lt;form&gt;
+                &lt;autocomplete&lt;=off&gt;
+                &lt;label for="nome">Nome:</label>
+                &lt;input type="text" id="nome" name="nome"&gt;&lt;br&gt;&lt;br&gt;
+                &lt;label for="email">Email:</label>
+                &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+                &lt;input type="submit" value="Enviar">
+            &lt;form&gt;
+        </pre>
+        <p>O método "get" é usado para enviar os dados do formulário como parte da URL, enquanto o método "post" envia os dados no corpo da requisição, proporcionando maior segurança para informações sensíveis. So que aparece os dados no Dev Tools.</p>
+        <p>Alterando o type, você pode criar diferentes tipos de botões para enviar o formulário. Como name, password, email, etc.</p>
+        <p>Input Especial de numero, você pode usar o comando Step, Fazendo que o usuário só possa inserir valores numéricos dentro de um intervalo específico. 1,5 ,2 ,2,5 etc.</p>
+        <h1>4- Media queries</h1>
+        <p>As media queries são usadas para aplicar estilos CSS diferentes com base nas características do dispositivo ou da tela. Elas permitem que você crie designs responsivos que se adaptam a diferentes tamanhos de tela, como desktops, tablets e smartphones.</p>
+        <p>Exemplo de media query para telas com largura máxima de 600 pixels:</p>
+        <pre><code>@media (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+        </code></pre>
+        <p>Isso fará com que o plano de fundo do corpo da página fique azul claro em dispositivos com largura de tela de 600 pixels ou menos. Você pode usar diferentes condições nas media queries, como min-width, max-width, orientation e outras para criar estilos específicos para diferentes dispositivos e orientações de tela.</p>
+        <h2>4.5- media features</h2>
+        <p>As media features são características específicas que podem ser usadas em media queries para aplicar estilos CSS com base em diferentes condições. Algumas das media features mais comuns incluem:</p>
+        <ul>
+            <li><strong>width</strong>: A largura da viewport do dispositivo.</li>
+            <li><strong>height</strong>: A altura da viewport do dispositivo.</li>
+            <li><strong>orientation</strong>: A orientação do dispositivo (portrait ou landscape).</
+            <li><strong>resolution</strong>: A resolução da tela do dispositivo.</li>
+            <li><strong>aspect-ratio</strong>: A proporção entre a largura e a altura da viewport.</li>
+        </ul>
+        <p>Essas media features permitem que você crie designs responsivos e adaptáveis, garantindo que seu site seja exibido corretamente em uma variedade de dispositivos e tamanhos de tela.</p>
+        <h1>5- Mobile First</h1>
+        <p>O conceito de "Mobile First" é uma abordagem de design e desenvolvimento web que prioriza a criação de experiências otimizadas para dispositivos móveis antes de se preocupar com versões para desktop. Isso significa que os designers e desenvolvedores começam a projetar e construir o site pensando primeiro na experiência do usuário em smartphones e tablets, garantindo que o conteúdo seja acessível, legível e fácil de navegar em telas menores.</p>
+        <h2>5.5- Device Breakpoints</h2>
+        <p>Os device breakpoints são pontos de interrupção específicos usados em media queries para definir estilos CSS diferentes com base no tamanho da tela do dispositivo. Eles ajudam a criar designs responsivos que se adaptam a diferentes dispositivos, como smartphones, tablets e desktops. Alguns breakpoints comuns incluem:</p>
+        <ul>
+            <li><strong>320px</strong>: Dispositivos móveis pequenos (smartphones)</li>
+            <li><strong>768px</strong>: Dispositivos móveis grandes e tablets</li>
+            <li><strong>1024px</strong>: Desktops e laptops</li>
+        </ul>
+    </main>
+    <footer id="direito">
+        <p style="text-align: center;">© 2026 Marcelo Alves - Desenvolvido com HTML e CSS</p>
+    </footer>
     
     
 </body>

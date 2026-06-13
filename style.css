@@ -5,12 +5,18 @@ background-attachment: fixed;
 max-width: 100%;
 
 
-
+main#conteudo {
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    
 
 }
 p {
  text-align: justify;
- max-width: 1500px;
+ max-width: 2000px;
 }
 h1 {
 text-align: center;
@@ -70,3 +76,8 @@ section#Botonvoltar img {
     
 }
 
+footer#direito {
+    text-decoration: underline;
+    size: 45px;
+    color: blueviolet;
+}
